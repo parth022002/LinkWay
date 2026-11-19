@@ -102,3 +102,12 @@
 9. `docs/DEVELOPMENT_PROGRESS.md`
 10. `docs/TESTING_REPORT.md`
 11. `docs/DEPLOYMENT_GUIDE.md`
+
+---
+
+## Update: Neon Serverless PostgreSQL Database Live Integration
+- **Database Provider**: Neon (ap-southeast-1 pooler).
+- **Prisma Datasource**: Configured to `provider = "postgresql"` and synchronized with `prisma db push`.
+- **Database Tables**: All 12 relational models (`User`, `Session`, `Workspace`, `WorkspaceMember`, `Campaign`, `Link`, `LinkVersion`, `QrAsset`, `RedirectEvent`, `CustomDomain`, `AbuseReport`, `AuditLog`) created directly on live Neon database.
+- **Verification**: Executed live query test with PrismaClient against Neon pooler; 27/27 Vitest unit & policy tests passing; full production build passing (21/21 routes).
+- **Repository Sync**: Pushed latest PostgreSQL schema changes to `https://github.com/parth022002/LinkWay.git` on branch `main`.
