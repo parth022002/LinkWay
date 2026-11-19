@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1160" viewBox="0 0 1600 1160">
+<defs><style>
+.title{font:700 34px Arial;fill:#15324b}.sub{font:18px Arial;fill:#536879}
+.box{fill:#fff;stroke:#16818a;stroke-width:3;rx:16}.layer{fill:#eaf2f5;stroke:#9ab5c1;stroke-width:2;rx:20}
+.txt{font:700 19px Arial;fill:#15324b}.small{font:15px Arial;fill:#42596b}
+.arrow{stroke:#16818a;stroke-width:4;fill:none;marker-end:url(#arr)}.dash{stroke-dasharray:9 7}
+</style><marker id="arr" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#16818a"/></marker></defs>
+<rect width="1600" height="1160" fill="#f5f8fa"/>
+<text x="65" y="65" class="title">LINKWAY — LOGICAL PROJECT ARCHITECTURE</text><text x="65" y="100" class="sub">Recommended TypeScript-first SaaS architecture; provider choices remain configurable until approved</text>
+<!-- clients -->
+<rect x="60" y="145" width="1480" height="135" class="layer"/><text x="85" y="180" class="txt">CLIENT EXPERIENCE</text>
+<rect x="100" y="200" width="300" height="60" class="box"/><text x="250" y="237" text-anchor="middle" class="txt">Public Website</text>
+<rect x="465" y="200" width="300" height="60" class="box"/><text x="615" y="237" text-anchor="middle" class="txt">Authenticated Dashboard</text>
+<rect x="830" y="200" width="300" height="60" class="box"/><text x="980" y="237" text-anchor="middle" class="txt">QR / Share Experience</text>
+<rect x="1195" y="200" width="300" height="60" class="box"/><text x="1345" y="237" text-anchor="middle" class="txt">Admin / Abuse Console</text>
+<!-- edge -->
+<rect x="60" y="320" width="1480" height="130" class="layer"/><text x="85" y="355" class="txt">EDGE & APPLICATION ENTRY</text>
+<rect x="100" y="375" width="390" height="55" class="box"/><text x="295" y="410" text-anchor="middle" class="txt">CDN / WAF / TLS / Rate Limits</text>
+<rect x="605" y="375" width="390" height="55" class="box"/><text x="800" y="410" text-anchor="middle" class="txt">Next.js App + API Layer</text>
+<rect x="1110" y="375" width="390" height="55" class="box"/><text x="1305" y="410" text-anchor="middle" class="txt">Short-link Redirect Handler</text>
+<path d="M490 402 H600 M995 402 H1105" class="arrow"/>
+<!-- services -->
+<rect x="60" y="490" width="1480" height="250" class="layer"/><text x="85" y="525" class="txt">DOMAIN SERVICES</text>
+<rect x="95" y="555" width="270" height="75" class="box"/><text x="230" y="585" text-anchor="middle" class="txt">Identity & Workspace</text><text x="230" y="610" text-anchor="middle" class="small">Membership · roles · sessions</text>
+<rect x="415" y="555" width="270" height="75" class="box"/><text x="550" y="585" text-anchor="middle" class="txt">Link & Campaign</text><text x="550" y="610" text-anchor="middle" class="small">UTM · code · lifecycle</text>
+<rect x="735" y="555" width="270" height="75" class="box"/><text x="870" y="585" text-anchor="middle" class="txt">QR & Asset</text><text x="870" y="610" text-anchor="middle" class="small">Canonical short URL QR</text>
+<rect x="1055" y="555" width="200" height="75" class="box"/><text x="1155" y="585" text-anchor="middle" class="txt">Analytics</text><text x="1155" y="610" text-anchor="middle" class="small">Events · aggregates</text>
+<rect x="1300" y="555" width="205" height="75" class="box"/><text x="1402" y="585" text-anchor="middle" class="txt">Safety & Audit</text><text x="1402" y="610" text-anchor="middle" class="small">Screen · report · log</text>
+<text x="95" y="690" class="small">Shared concerns: validation schemas · authorization policy · structured errors · request IDs · feature flags</text>
+<!-- storage -->
+<rect x="60" y="780" width="1480" height="190" class="layer"/><text x="85" y="815" class="txt">DATA & INFRASTRUCTURE</text>
+<rect x="95" y="850" width="330" height="85" class="box"/><text x="260" y="883" text-anchor="middle" class="txt">PostgreSQL</text><text x="260" y="910" text-anchor="middle" class="small">Users · workspaces · links · versions</text>
+<rect x="485" y="850" width="260" height="85" class="box"/><text x="615" y="883" text-anchor="middle" class="txt">Redis / Cache</text><text x="615" y="910" text-anchor="middle" class="small">Redirect cache · throttles</text>
+<rect x="805" y="850" width="260" height="85" class="box"/><text x="935" y="883" text-anchor="middle" class="txt">Event Store</text><text x="935" y="910" text-anchor="middle" class="small">Append-only redirect events</text>
+<rect x="1125" y="850" width="380" height="85" class="box"/><text x="1315" y="883" text-anchor="middle" class="txt">Object Storage (optional)</text><text x="1315" y="910" text-anchor="middle" class="small">Exports · persistent QR assets</text>
+<!-- ops -->
+<rect x="60" y="1010" width="1480" height="105" class="layer"/><text x="85" y="1048" class="txt">CROSS-CUTTING OPERATIONS</text><text x="85" y="1082" class="small">CI/CD · secrets management · backups/restore · monitoring/alerts · logs/traces · vulnerability scanning · incident response</text>
+<!-- connectors -->
+<path d="M800 280 V315 M800 450 V485 M230 630 V845 M550 630 V845 M870 630 V845 M1155 630 V845 M1402 630 V845 M1305 450 V550" class="arrow dash"/>
+</svg>

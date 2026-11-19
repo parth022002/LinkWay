@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+<defs><style>
+.title{font:700 34px Arial;fill:#15324b}.sub{font:18px Arial;fill:#536879}
+.box{fill:#fff;stroke:#16818a;stroke-width:3;rx:18}.dark{fill:#15324b;stroke:#15324b}
+.txt{font:700 20px Arial;fill:#15324b}.small{font:16px Arial;fill:#42596b}.white{fill:#fff}
+.arrow{stroke:#16818a;stroke-width:4;fill:none;marker-end:url(#arr)}.dash{stroke-dasharray:9 8}
+</style><marker id="arr" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 z" fill="#16818a"/></marker></defs>
+<rect width="1600" height="1120" fill="#f5f8fa"/>
+<text x="70" y="70" class="title">LINKWAY — END-TO-END USER JOURNEY</text><text x="70" y="105" class="sub">From discovery to campaign link creation, sharing, measurement and lifecycle management</text>
+<!-- stages -->
+<g>
+<rect x="70" y="160" width="320" height="135" class="box"/><text x="95" y="200" class="txt">1. Discover LinkWay</text><text x="95" y="235" class="small">Landing page · value proposition</text><text x="95" y="262" class="small">Features · trust · CTA</text>
+<rect x="455" y="160" width="320" height="135" class="box"/><text x="480" y="200" class="txt">2. Sign up / Sign in</text><text x="480" y="235" class="small">Authentication · verification</text><text x="480" y="262" class="small">Create or join workspace</text>
+<rect x="840" y="160" width="320" height="135" class="box"/><text x="865" y="200" class="txt">3. Workspace onboarding</text><text x="865" y="235" class="small">Role · preferences · quick tour</text><text x="865" y="262" class="small">Create first campaign/link</text>
+<rect x="1225" y="160" width="305" height="135" class="box"/><text x="1250" y="200" class="txt">4. Campaign DNA</text><text x="1250" y="235" class="small">Name · source · medium</text><text x="1250" y="262" class="small">Campaign conventions</text>
+<path d="M390 228 H450 M775 228 H835 M1160 228 H1220" class="arrow"/>
+<rect x="1225" y="390" width="305" height="145" class="box"/><text x="1250" y="432" class="txt">5. UTM Builder</text><text x="1250" y="468" class="small">Validate · encode · preview</text><text x="1250" y="495" class="small">Preserve existing query/fragment</text>
+<rect x="840" y="390" width="320" height="145" class="box"/><text x="865" y="432" class="txt">6. Create Short Link</text><text x="865" y="468" class="small">Validate destination · unique code</text><text x="865" y="495" class="small">Save link and campaign mapping</text>
+<rect x="455" y="390" width="320" height="145" class="box"/><text x="480" y="432" class="txt">7. QR Identity</text><text x="480" y="468" class="small">Generate QR from canonical URL</text><text x="480" y="495" class="small">Preview · download · share</text>
+<rect x="70" y="390" width="320" height="145" class="box"/><text x="95" y="432" class="txt">8. Share & Redirect</text><text x="95" y="468" class="small">Recipient opens short URL / QR</text><text x="95" y="495" class="small">Safe resolution · event capture</text>
+<path d="M1378 295 V385 M1225 462 H1165 M840 462 H780 M455 462 H395" class="arrow"/>
+<rect x="70" y="670" width="430" height="150" class="box"/><text x="95" y="712" class="txt">9. Analytics & Insights</text><text x="95" y="748" class="small">Recorded redirects · trends · referrer</text><text x="95" y="775" class="small">Coarse device/geography where allowed</text>
+<rect x="585" y="670" width="430" height="150" class="box"/><text x="610" y="712" class="txt">10. Version History</text><text x="610" y="748" class="small">Who changed what and when</text><text x="610" y="775" class="small">Immutable snapshots · audit timeline</text>
+<rect x="1100" y="670" width="430" height="150" class="box"/><text x="1125" y="712" class="txt">11. Manage Link Lifecycle</text><text x="1125" y="748" class="small">Edit · pause · archive · report abuse</text><text x="1125" y="775" class="small">Role-based controls · safe takedown</text>
+<path d="M230 535 V660 M615 535 V610 H800 V660 M1000 535 V610 H1315 V660" class="arrow"/>
+<rect x="270" y="910" width="1060" height="115" class="dark" rx="18"/>
+<text x="800" y="955" text-anchor="middle" class="txt white">Continuous trust layer</text>
+<text x="800" y="990" text-anchor="middle" class="small white">Authentication · workspace permissions · URL safety · privacy controls · audit logs · monitoring · support</text>
+<path d="M285 820 V900 M800 820 V900 M1315 820 V900" class="arrow dash"/>
+</g></svg>
